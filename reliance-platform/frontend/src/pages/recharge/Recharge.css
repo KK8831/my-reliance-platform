@@ -1,0 +1,53 @@
+/* ── Recharge Inputs ── */
+.recharge-label {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--color-text-secondary);
+  margin: 0 0 8px;
+}
+
+.recharge-input {
+  width: 100%;
+  padding: 14px;
+  border: 1.5px solid #e0e0e0;
+  border-radius: 12px;
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--color-text-primary);
+  font-family: var(--font-family);
+  background: #f7f7f7;
+  margin-bottom: 16px;
+  text-align: center;
+  display: block;
+  transition: border-color 0.2s;
+}
+
+.recharge-input:focus {
+  border-color: var(--color-primary-red);
+  outline: none;
+}
+
+.recharge-input::placeholder {
+  color: #ccc;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+/* ── Explanation Box (shared with Withdraw) ── */
+.explanation-box {
+  background: #fafafa;
+  border-radius: 12px;
+  padding: 14px;
+  border-left: 3px solid var(--color-primary-red);
+}
+
+.explanation-item {
+  font-size: 12px;
+  color: var(--color-text-secondary);
+  margin: 0 0 6px;
+  line-height: 1.6;
+}
+
+.explanation-item:last-child {
+  margin-bottom: 0;
+}

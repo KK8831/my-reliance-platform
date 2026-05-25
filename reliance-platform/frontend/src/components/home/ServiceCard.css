@@ -1,0 +1,33 @@
+.service-row {
+  display: flex;
+  gap: 12px;
+  margin: 12px 0;
+}
+
+.service-card {
+  flex: 1;
+  padding: 14px 16px;
+  border-radius: 14px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #fff;
+  cursor: pointer;
+  border: none;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: opacity 0.2s, transform 0.15s;
+}
+
+.service-card:hover {
+  opacity: 0.9;
+  transform: translateY(-1px);
+}
+
+.service-card.orange {
+  background: linear-gradient(135deg, #E65100, #FF8F00);
+}
+
+.service-card.green {
+  background: linear-gradient(135deg, #2E7D32, #43A047);
+}

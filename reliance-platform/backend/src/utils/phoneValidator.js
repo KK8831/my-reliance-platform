@@ -1,0 +1,1 @@
+module.exports = (phone) => /^[6-9]\d{9}$/.test(phone)

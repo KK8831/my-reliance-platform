@@ -1,0 +1,19 @@
+{
+  "name": "reliance-database",
+  "version": "1.0.0",
+  "scripts": {
+    "seed:all":      "node seeds/index.js",
+    "seed:vip":      "node seeds/vipLevelsSeed.js",
+    "seed:stable":   "node seeds/stablePlansSeed.js",
+    "seed:daily":    "node seeds/dailyPlansSeed.js",
+    "seed:activity": "node seeds/activityPlansSeed.js",
+    "seed:notices":  "node seeds/noticesSeed.js",
+    "migrate":       "node migrations/index.js",
+    "drop":          "node migrations/dropAll.js"
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "dotenv":   "^16.4.1",
+    "mongoose": "^8.1.1"
+  }
+}

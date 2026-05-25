@@ -1,0 +1,44 @@
+.otp-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 14px;
+}
+
+.otp-input {
+  flex: 1;
+  padding: 12px 14px;
+  font-size: 15px;
+  background: #f7f7f7;
+  border: 1px solid #e0e0e0;
+  border-radius: 10px;
+  color: var(--color-text-primary);
+  transition: border-color 0.2s;
+}
+
+.otp-input:focus {
+  border-color: var(--color-primary-red);
+}
+
+.otp-input::placeholder {
+  color: #bbb;
+}
+
+.send-btn {
+  padding: 12px 16px;
+  background: var(--color-gradient-cta);
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: opacity 0.2s;
+  min-width: 72px;
+}
+
+.send-btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}

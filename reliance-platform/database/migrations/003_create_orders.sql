@@ -1,0 +1,23 @@
+CREATE TABLE orders (
+  id                  BIGINT PRIMARY KEY AUTO_INCREMENT,
+  user_id             BIGINT        NOT NULL,
+  product_id          BIGINT        NOT NULL,
+  amount_paid         DECIMAL(15,2) NOT NULL,
+  daily_earnings      DECIMAL(15,2) NOT NULL DEFAULT 0.00,
+  hourly_earnings     DECIMAL(15,2) NOT NULL DEFAULT 0.00,
+  total_earned        DECIMAL(15,2) NOT NULL DEFAULT 0.00,
+  earnings_count      INT           NOT NULL DEFAULT 0,
+  max_earnings_count  INT           NOT NULL DEFAULT 1,
+  type                ENUM('stable','daily','activity') NOT NULL,
+  status              ENUM('active','completed','cancelled') NOT NULL DEFAULT 'active',
+  start_date          DATETIME      NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  end_date            DATETIME      DEFAULT NULL,
+  last_credited       DATETIME      DEFAULT NULL,
+  created_at          DATETIME      NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  updated_at          DATETIME      NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+  FOREIGN KEY (user_id)    REFERENCES users(id)    ON DELETE CASCADE,
+  FOREIGN KEY (product_id) REFERENCES products(id) ON DELETE CASCADE,
+  INDEX idx_user_id   (user_id),
+  INDEX idx_status    (status),
+  INDEX idx_type      (type)
+);

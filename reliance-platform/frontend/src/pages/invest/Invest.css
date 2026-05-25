@@ -1,0 +1,23 @@
+/* ── Invest Header Logo ── */
+.invest-logo {
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+/* ── Plan Tabs (outside wave card) ── */
+.invest-tabs-wrapper {
+  padding: 0 16px;
+  background: #fff;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+/* ── Plans List ── */
+.invest-list {
+  padding: 14px 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}

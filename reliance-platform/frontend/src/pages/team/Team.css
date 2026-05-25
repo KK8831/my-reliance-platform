@@ -1,0 +1,152 @@
+/* ── Team Stats ── */
+.team-stats {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 14px;
+}
+
+.stat-box {
+  flex: 1;
+  background: linear-gradient(135deg, #fff5f5, #ffebee);
+  border-radius: 14px;
+  padding: 16px 12px;
+  text-align: center;
+}
+
+.stat-box.green {
+  background: linear-gradient(135deg, #e8f5e9, #f1f8e9);
+}
+
+.stat-val {
+  font-size: 22px;
+  font-weight: 800;
+  color: var(--color-primary-red);
+  margin: 0 0 4px;
+}
+
+.stat-box.green .stat-val {
+  color: var(--color-green-accent);
+}
+
+.stat-label {
+  font-size: 11px;
+  color: var(--color-text-secondary);
+  margin: 0;
+  font-weight: 500;
+}
+
+/* ── Invite Link Card ── */
+.invite-link-card {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: linear-gradient(135deg, #fff8e1, #fff3e0);
+  border: 1px solid #ffe0b2;
+  border-radius: 14px;
+  padding: 14px;
+  margin-bottom: 16px;
+}
+
+.invite-link-card > span {
+  font-size: 28px;
+  flex-shrink: 0;
+}
+
+.link-label {
+  font-size: 11px;
+  color: var(--color-text-secondary);
+  font-weight: 600;
+  margin: 0 0 3px;
+}
+
+.link-url {
+  font-size: 12px;
+  color: var(--color-primary-blue);
+  word-break: break-all;
+  margin: 0 0 8px;
+}
+
+.copy-btn {
+  padding: 7px 16px;
+  background: var(--color-gradient-cta);
+  color: #fff;
+  border: none;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 700;
+  cursor: pointer;
+  flex-shrink: 0;
+  margin-left: auto;
+  transition: opacity 0.2s;
+}
+
+.copy-btn:hover { opacity: 0.88; }
+
+/* ── Team Level ── */
+.team-level-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 0 12px;
+  border-bottom: 1px solid #f0f0f0;
+  margin-bottom: 8px;
+}
+
+.team-details-link {
+  font-size: 12px;
+  color: var(--color-primary-red);
+  font-weight: 600;
+}
+
+.level-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 0;
+  border-bottom: 1px solid #f8f8f8;
+}
+
+.level-row:last-child { border-bottom: none; }
+
+.lv-badge {
+  width: 36px;
+  height: 36px;
+  border-radius: 10px;
+  background: var(--color-gradient-cta);
+  color: #fff;
+  font-size: 11px;
+  font-weight: 800;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.lv-info {
+  flex: 1;
+  text-align: center;
+}
+
+.lv-rate {
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--color-text-primary);
+  margin: 0 0 2px;
+}
+
+.lv-desc {
+  font-size: 10px;
+  color: var(--color-text-secondary);
+  margin: 0;
+}
+
+/* ── Invite Banner ── */
+.invite-banner {
+  background: rgba(255,255,255,0.2);
+  border-radius: 12px;
+  padding: 8px 20px;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 800;
+  letter-spacing: 1px;
+}

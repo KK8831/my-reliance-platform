@@ -1,0 +1,31 @@
+.gradient-btn {
+  padding: 14px 24px;
+  background: var(--color-gradient-cta);
+  color: #fff;
+  border: none;
+  border-radius: var(--border-radius-btn);
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: opacity 0.2s, transform 0.1s;
+  letter-spacing: 0.3px;
+}
+
+.gradient-btn.full-width {
+  width: 100%;
+  margin-top: 8px;
+}
+
+.gradient-btn:hover:not(.disabled) {
+  opacity: 0.92;
+  transform: translateY(-1px);
+}
+
+.gradient-btn:active:not(.disabled) {
+  transform: translateY(0);
+}
+
+.gradient-btn.disabled {
+  opacity: 0.55;
+  cursor: not-allowed;
+}

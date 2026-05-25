@@ -1,0 +1,20 @@
+CREATE TABLE transactions (
+  id               BIGINT PRIMARY KEY AUTO_INCREMENT,
+  user_id          BIGINT        NOT NULL,
+  type             ENUM('recharge','withdraw','commission','earning','referral_bonus') NOT NULL,
+  amount           DECIMAL(15,2) NOT NULL,
+  fee_amount       DECIMAL(15,2) NOT NULL DEFAULT 0.00,
+  net_amount       DECIMAL(15,2) NOT NULL,
+  payment_channel  VARCHAR(50)   DEFAULT NULL,
+  status           ENUM('pending','success','failed','rejected') NOT NULL DEFAULT 'pending',
+  bank_card_id     BIGINT        DEFAULT NULL,
+  reference_id     VARCHAR(100)  DEFAULT NULL,
+  note             TEXT          DEFAULT NULL,
+  created_at       DATETIME      NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  updated_at       DATETIME      NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+  FOREIGN KEY (user_id) REFERENCES users(id) ON DELETE CASCADE,
+  INDEX idx_user_id   (user_id),
+  INDEX idx_type      (type),
+  INDEX idx_status    (status),
+  INDEX idx_reference (reference_id)
+);

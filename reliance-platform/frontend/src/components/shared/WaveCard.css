@@ -1,0 +1,19 @@
+.wave-card {
+  background: #fff;
+  border-radius: 24px 24px 0 0;
+  margin-top: -24px;
+  position: relative;
+  z-index: 2;
+  min-height: 50vh;
+  padding: 0 0 20px;
+}
+
+.wave-top {
+  height: 6px;
+  background: var(--color-gradient-cta);
+  border-radius: 24px 24px 0 0;
+}
+
+.wave-content {
+  padding: 16px 16px 0;
+}

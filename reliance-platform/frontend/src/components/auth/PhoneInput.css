@@ -1,0 +1,36 @@
+.phone-input-wrapper {
+  display: flex;
+  align-items: center;
+  background: #f7f7f7;
+  border: 1px solid #e0e0e0;
+  border-radius: 10px;
+  margin-bottom: 14px;
+  overflow: hidden;
+  transition: border-color 0.2s;
+}
+
+.phone-input-wrapper:focus-within {
+  border-color: var(--color-primary-red);
+}
+
+.country-code {
+  padding: 12px 14px;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--color-text-primary);
+  border-right: 1px solid #e0e0e0;
+  background: #efefef;
+  white-space: nowrap;
+}
+
+.phone-input {
+  flex: 1;
+  padding: 12px 14px;
+  font-size: 15px;
+  background: transparent;
+  color: var(--color-text-primary);
+}
+
+.phone-input::placeholder {
+  color: #bbb;
+}

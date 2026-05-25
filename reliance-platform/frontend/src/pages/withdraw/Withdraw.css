@@ -1,0 +1,94 @@
+/* ── Withdraw Balance Label (inside HeroBanner) ── */
+.withdraw-balance-label {
+  color: rgba(255,255,255,0.9);
+  font-size: 14px;
+  margin: 8px 0 0;
+  font-weight: 500;
+}
+
+.withdraw-balance-label strong {
+  font-size: 20px;
+  font-weight: 800;
+}
+
+/* ── Field Inputs ── */
+.field-label {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--color-text-secondary);
+  margin: 0 0 6px;
+}
+
+.field-input {
+  width: 100%;
+  padding: 12px 14px;
+  border: 1.5px solid #e0e0e0;
+  border-radius: 10px;
+  font-size: 15px;
+  color: var(--color-text-primary);
+  font-family: var(--font-family);
+  background: #f7f7f7;
+  margin-bottom: 14px;
+  transition: border-color 0.2s;
+  display: block;
+}
+
+.field-input:focus {
+  border-color: var(--color-primary-red);
+  outline: none;
+}
+
+.field-input option {
+  font-size: 14px;
+}
+
+/* ── Withdraw History Link ── */
+.withdraw-history-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 14px 0;
+  border-top: 1px solid #f5f5f5;
+  border-bottom: 1px solid #f5f5f5;
+  cursor: pointer;
+  color: var(--color-text-primary);
+  font-size: 14px;
+  font-weight: 500;
+  margin: 8px 0 0;
+}
+
+.withdraw-history-row span {
+  color: var(--color-text-secondary);
+  font-size: 18px;
+}
+
+/* ── Explanation Box ── */
+.explanation-box {
+  background: #fafafa;
+  border-radius: 12px;
+  padding: 14px;
+  border-left: 3px solid var(--color-primary-red);
+}
+
+.explanation-item {
+  font-size: 12px;
+  color: var(--color-text-secondary);
+  margin: 0 0 6px;
+  line-height: 1.6;
+}
+
+.explanation-item:last-child {
+  margin-bottom: 0;
+}
+
+/* ── Withdraw Status Pills ── */
+.withdraw-status {
+  font-size: 12px;
+  font-weight: 600;
+  padding: 3px 10px;
+  border-radius: 12px;
+}
+
+.withdraw-status.pending  { background: #fff8e1; color: #F57F17; }
+.withdraw-status.approved { background: #e8f5e9; color: #2E7D32; }
+.withdraw-status.rejected { background: #ffebee; color: #C62828; }

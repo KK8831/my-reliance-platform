@@ -1,0 +1,18 @@
+:root {
+  --color-primary-red: #E53935;
+  --color-primary-blue: #1A237E;
+  --color-gradient-cta: linear-gradient(90deg, #E53935, #1A237E);
+  --color-gold: #D4A017;
+  --color-bg-white: #FFFFFF;
+  --color-bg-light: #F5F5F5;
+  --color-text-primary: #212121;
+  --color-text-secondary: #757575;
+  --color-blue-accent: #1565C0;
+  --color-green-accent: #2E7D32;
+  --color-orange-accent: #E65100;
+  --color-card-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  --border-radius-btn: 50px;
+  --border-radius-card: 16px;
+  --bottom-nav-height: 60px;
+  --font-family: 'Roboto', sans-serif;
+}

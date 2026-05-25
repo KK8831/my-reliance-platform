@@ -1,0 +1,1 @@
+export const QUICK_AMOUNTS = [290, 2770, 7770, 17770, 27770]

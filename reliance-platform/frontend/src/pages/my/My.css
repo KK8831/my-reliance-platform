@@ -1,0 +1,231 @@
+/* ── My Page Layout ── */
+.my-body {
+  padding: 0 16px 16px;
+}
+
+/* ── Balance Card ── */
+.balance-card {
+  background: #fff;
+  border-radius: 20px;
+  padding: 18px;
+  margin-bottom: 14px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+}
+
+.balance-row {
+  display: flex;
+  justify-content: space-around;
+  padding-bottom: 14px;
+  border-bottom: 1px solid #f5f5f5;
+  margin-bottom: 12px;
+}
+
+.bal-val {
+  font-size: 18px;
+  font-weight: 800;
+  color: var(--color-primary-red);
+  margin: 0 0 2px;
+}
+
+.bal-val.blue {
+  color: var(--color-primary-blue);
+}
+
+.bal-label {
+  font-size: 11px;
+  color: var(--color-text-secondary);
+  margin: 0;
+  font-weight: 500;
+}
+
+/* ── My Quick Actions ── */
+.my-quick-actions {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 14px;
+}
+
+.my-action-btn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 11px;
+  color: var(--color-text-secondary);
+  font-weight: 500;
+  transition: transform 0.15s;
+}
+
+.my-action-btn:hover { transform: translateY(-2px); }
+
+.my-action-icon {
+  width: 44px;
+  height: 44px;
+  background: linear-gradient(135deg, #fff5f5, #f0f4ff);
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+}
+
+/* ── Avatar & Profile ── */
+.my-avatar {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  border: 3px solid rgba(255,255,255,0.5);
+  object-fit: cover;
+}
+
+.my-avatar-fallback {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  border: 3px solid rgba(255,255,255,0.5);
+  background: linear-gradient(135deg, #FF4B2B, #FF416C);
+  color: white;
+  font-size: 28px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.my-name {
+  font-size: 18px;
+  font-weight: 700;
+  color: #fff;
+  margin: 8px 0 3px;
+}
+
+.my-id {
+  font-size: 12px;
+  color: rgba(255,255,255,0.75);
+  margin: 0;
+}
+
+/* ── VIP Banner ── */
+.vip-banner {
+  background: linear-gradient(135deg, #3E1F92, #7B1FA2);
+  border-radius: 16px;
+  padding: 16px;
+  margin-bottom: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+  transition: opacity 0.2s;
+}
+
+.vip-banner:hover { opacity: 0.92; }
+
+.vip-banner-label {
+  color: #fff;
+  font-size: 14px;
+  font-weight: 600;
+  margin: 0 0 4px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.vip-badge-pill {
+  background: rgba(255,255,255,0.2);
+  border-radius: 12px;
+  padding: 2px 10px;
+  font-size: 12px;
+}
+
+.vip-banner-sub {
+  color: rgba(255,255,255,0.75);
+  font-size: 11px;
+  margin: 0 0 8px;
+}
+
+.vip-mini-bar {
+  height: 4px;
+  background: rgba(255,255,255,0.25);
+  border-radius: 4px;
+  overflow: hidden;
+  margin-bottom: 8px;
+}
+
+.vip-mini-fill {
+  height: 100%;
+  background: #FFD54F;
+  border-radius: 4px;
+  transition: width 0.5s ease;
+}
+
+.vip-upgrade-link {
+  color: #FFD54F;
+  font-size: 11px;
+  margin: 0;
+  font-weight: 600;
+}
+
+.vip-banner-badge {
+  font-size: 40px;
+  flex-shrink: 0;
+  margin-left: 10px;
+}
+
+/* ── My Section ── */
+.my-section {
+  background: #fff;
+  border-radius: 16px;
+  padding: 16px;
+  margin-bottom: 14px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+}
+
+.my-section-title {
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--color-text-secondary);
+  margin: 0 0 14px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.my-icon-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  justify-content: flex-start;
+}
+
+.my-icon-btn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 11px;
+  color: var(--color-text-secondary);
+  font-weight: 500;
+  width: 64px;
+  transition: transform 0.15s;
+}
+
+.my-icon-btn:hover { transform: translateY(-2px); }
+
+.my-icon {
+  width: 52px;
+  height: 52px;
+  background: linear-gradient(135deg, #f9f9f9, #f0f0f0);
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.08);
+}
